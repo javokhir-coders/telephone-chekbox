@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Calibri",sans-serif;
+}
+
+img{
+  vertical-align: middle;
+}
+
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.box__img__cards{
+  width: 380px;
+  height: 220px;
+  margin-bottom: 100px;
+}
+
+
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width:860px;
+  height: 1094px;
+  margin: 0 auto;
+  padding-top:150px;
+  background-image: url("../img/iPhone-Pro-12-Mockup-2-1536x1306.jpg");
+  background-size:1536px 1306px ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrap__input:checked ~ .wrap__label{
+background-color: dodgerblue;
+}
+
+.wrap__input:checked ~ .wrap__label > .wrap__input__controller{
+  background-color: white;
+  transform: translateX(30px);
+  }
+
+.wrap__label{
+display: inline-block;
+width: 65px;
+height: 36px;
+background-color: #ccc;
+border-radius: 30px;
+transition: all 0.4s ease;
+margin-left: auto;
+border: 1px solid #fefefe;
+}
+
+.wrap__icon__img{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.wrap__icon__box{
+  margin-right: 20px;
+
+}
+
+.wrap{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.wrap__icon__heading{
+  margin: 0;
+}
+
+.wrap__icon__text{
+  margin: 0;
+}
+
+  
+  .wrap__input__controller{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    border-radius:  50%;
+    transition: all 0.4s ease;
+    border: 1px solid #fefefe;
+  }
+
